@@ -22,7 +22,7 @@ public class GetterAndSetterDemo {
     private boolean enroll;
 
     private class Inner {
-        private String getName() {
+        private String getOuterName() {
             return getName();
         }
     }
@@ -31,6 +31,6 @@ public class GetterAndSetterDemo {
         GetterAndSetterDemo getterAndSetterDemo = new GetterAndSetterDemo();
         getterAndSetterDemo.setName("lombok");
         GetterAndSetterDemo.Inner inner = getterAndSetterDemo.new Inner();
-        System.out.println(inner.getName());
+        System.out.println(inner.getOuterName());
     }
 }
