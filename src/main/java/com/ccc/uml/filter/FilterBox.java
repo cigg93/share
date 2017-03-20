@@ -15,7 +15,7 @@ import java.util.List;
 public class FilterBox implements ArticleFilter {
 
     @Autowired
-    List<ArticleFilter> filters;
+    private List<ArticleFilter> filters;
 
     @Override
     public boolean filterArticle(Article article) {
